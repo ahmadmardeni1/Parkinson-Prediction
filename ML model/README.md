@@ -30,7 +30,7 @@ For the detection we had used CNN architecture which can be summarised as
 ![image](https://user-images.githubusercontent.com/49975886/116791252-9be2fe00-aad6-11eb-91a5-302abab913ac.png)
 
 
-The following was the accuracy vs epoch graph obtained for spiral, wave respectively
+The following was the accuracy vs epoch graph obtained for spiral, and wave respectively
 
 ![image](https://user-images.githubusercontent.com/49975886/116790933-a1d7df80-aad4-11eb-9ad4-64d5e8977357.png)
 
