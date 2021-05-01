@@ -1,0 +1,56 @@
+#selectedFilesD img,
+#selectFilesM img {
+  max-width: 200px;
+  max-height: 200px;
+  float: left;
+  margin-bottom: 10px;
+}
+#userActions input {
+  width: auto;
+  margin: auto;
+}
+#selectFiles img,
+#selectedFilesM img {
+  max-width: 200px;
+  max-height: 200px;
+  float: left;
+  margin-bottom: 10px;
+}
+.bg-light {
+    background-color: #b591eb ;
+    background-attachment: scroll;
+    height: 100%;
+    margin-left: 40px;
+    right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em*/
+  }
+  .col-12{
+      text-align: center;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  /*.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }*/

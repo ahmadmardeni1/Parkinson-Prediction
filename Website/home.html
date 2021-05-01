@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Overcome Parkinson's Fear</title>
+	<meta name="theme-color" content="#563d7c">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+	<link rel=¨stylesheet¨ type=¨text/css¨ href=¨style.css¨>
+	<script src="design.js"></script>
+<style>
+body, html {
+  background-image: url("");
+  background-attachment: scroll;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+</head>
+
+<body class="bg-light" style="background-color:powderblue">
+	<img src="images/banner.png" style="width:100%;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1><span style="text-decoration: underline; color: #00ff73;"><em><strong>Upload The Required Images</strong></em></span></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<form id="upload-file" method="post" enctype="multipart/form-data">
+				<img id="img-preview" src="#" alt="preview image" class="img-thumbnail" style="max-height:400px; display:none;">
+				<br/>
+				<!--form id="upload-file" method="post" enctype="multipart/form-data"-->
+					<div class="form-group" style="float: left;">
+						<label for="InputFile">Image File</label>
+						<input name="image" type="file" class="form-control-file" id="InputFile" aria-describedby="fileHelp">
+						<medium id="fileHelp" class="form-text text-muted"><font color="Purple">Upload Spiral Image!</font></medium>
+					</div>
+				<img id="img-preview2" src_2="#" alt="preview image" class="img-thumbnail" style="max-height:400px; display:none;">
+				<br/>
+				<!--form id="upload-file2" method="post" enctype="multipart/form-data"-->
+					<div class="form-group" style="float: left">
+						<label for="InputFile2">Image File</label>
+						<input name="image2" type="file" class="form-control-file" id="InputFile2" aria-describedby="fileHelp">
+						<medium id="fileHelp" class="form-text text-muted"><font color="Purple">Upload Wave Image!</font></medium>
+					</div>
+					<button id="upload-file-btn" type="button" class="btn btn-primary">Find It!</button>	
+				</form>
+				<!--/form-->
+			</div>
+
+
+		<div id="results"></div>
+	</div>
+
+<p></p>
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted"><font color="Blue">© Overcome Parkinson's Fear 2021 @EQUINOX'21<font></span>
+		</div>
+	</footer>
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript"src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.form.js"></script>
+	<script>
+	    
+
+		/*function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('#img-preview').attr('src', e.target.result);
+					$('#img-preview').show();
+
+					$("#results").html('');
+				}
+
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+
+		$("#InputFile").change(function () {
+			readURL(this);
+		});*/
+		
+
+
+
+
+		$('#upload-file-btn').click(function () {
+			$('.loader').show();
+			$("#results").html('');
+
+			var form_data = new FormData($('#upload-file')[0]);
+			$.ajax({
+				type: 'POST',
+				url: '/extract_data',
+				data: form_data,
+				contentType: false,
+				cache: false,
+				processData: false,
+				async: false,
+				success: function (data) {
+					console.log(data.success);
+
+					$('.loader').hide();
+
+					$.each(data.predictions, function (i, item) {
+						console.log(item);
+						label = item["date"];
+						
+						$("#results").append('<h1>' + percent + '% ' + label + '</h1><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="' +  '" aria-valuemin="0" aria-valuemax="100" style="width:' +  '%"></div></div>');
+					});
+				},
+			});
+		});
+	</script>
+</body>
+
+</html>

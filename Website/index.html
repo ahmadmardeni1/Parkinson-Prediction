@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Overcome Parkinson's Fear</title>
+	<meta name="theme-color" content="#563d7c">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+	<link rel=¨stylesheet¨ type=¨text/css¨ href=¨style.css¨>
+	<script src="design.js"></script>
+    <img src="images/banner.png" style="width:100%;">
+    <!--style>
+        body, html {
+          background-color: #b591eb ;
+          background-attachment: scroll;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    </style-->
+</head>
+
+<body class="p-3 mb-2 bg-secondary">
+    <!--div class="container3"-->
+    <div class="col-12">
+        <h1><span style="text-decoration: underline; color: #00ff73;"><em><strong>Upload The Required Images</strong></em></span></h1>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="design.js"></script>
+    <form action="index.php" id="myForm" name="myForm" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+    <div class="row">
+      <div class= "column"> 
+    <label for="InputFile">Image File</label>
+    <!--input aria-describedby="fileHelp"-->
+    <small id="fileHelp" class="form-text text-muted"><font color="#ffffff">Upload Spiral Image Here!</font></small>
+  <input data-device="desktop" type="file" id="files" name="files" multiple>
+  <div id="selectedFilesD"></div>
+  <br/> 
+</div>
+<div class= "column"> 
+    <label for="InputFile">Image File</label>
+    <!--input aria-describedby="fileHelp"-->
+    <small id="fileHelp" class="form-text text-muted"><font color="#ffffff">Upload Spiral Image Here!</font></small>
+  <input data-device="mobile" type="file" id="mobile" name="mobile" multiple>
+  
+  </div>
+
+  <div id="selectedFilesM"></div>
+</div>
+
+  <button type="submit" class="btn btn-primary">Get The Result</button>
+</form>
+<!--/div-->
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted"><font color="#9bf6ff">© Overcome Parkinson's Fear 2021 @EQUINOX'21<font></span>
+    </div>
+</footer>  
+</body>  
