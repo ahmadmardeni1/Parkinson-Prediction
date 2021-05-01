@@ -1,5 +1,7 @@
 # Overcoming parkinson Fright
-
+## Find the Pretrained model here
+https://drive.google.com/drive/folders/1a3H-pFoH12YzdiIMJoGQV_pv5yxmeP_t?usp=sharing
+Navigate here and unload the ".h5" file which you can use for predictions
 ## Method used
 Using Deep Learning to classifiy whether the person has the disease or not, the person will be asked 
 to upload two pictures where he will be asked to draw a spiral and a wave pic based on which the model will work
