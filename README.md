@@ -1,11 +1,11 @@
 ![](https://github.com/ahmadmardeni1/Parkinson-Prediction/blob/main/Banner.png)
 
-## What is Parkinson Disease?
+## What is Parkinson's Disease?
 Parkinson's disease is a brain disorder that leads to shaking, stiffness, and difficulty with walking, balance, and coordination. Parkinson's symptoms usually begin gradually and get worse over time. As the disease progresses, people may have difficulty walking and talking.
 
 ## What was the approach?
-Considering the COVID scenario we wanted to make the diagnosis simple where to detect preesence of Parkinson disease, the person is supposed to upload two images where he or she had drawn a wave and a spiral based on which the detection occurs.
-These are some of the example images on which model is being trained and tested.
+Considering the COVID scenario we wanted to make the diagnosis simple were to detect the presence of Parkinson's disease, the person is supposed to upload two images where he or she had drawn a wave and a spiral based on which the detection occurs.
+These are some of the example images on which the model is being trained and tested.
 
 ### Spiral-Healthy
 ![image](https://user-images.githubusercontent.com/49975886/116790798-e2832900-aad3-11eb-97eb-1ab8e877a148.png)
@@ -36,4 +36,7 @@ The following was the accuracy vs epoch graph obtained for spiral, and wave resp
 ![image](https://user-images.githubusercontent.com/49975886/116790933-a1d7df80-aad4-11eb-9ad4-64d5e8977357.png) ![image](https://user-images.githubusercontent.com/49975886/116790944-b74d0980-aad4-11eb-8da1-09858ee4771d.png)
 
 ## Why do you need to use this application?
-Considering the pandemic situation it is necessary to mantain social distancing and also avoid unnecessary visits to the hospital. The perk of this application is you ask the person to draw just two images where one is spiral and other is a wave and based on this the output is combines from their respective neural network. This is easy to use and access. 
+Considering the pandemic situation it is necessary to maintain social distancing and also avoid unnecessary visits to the hospital. The perk of this application is you ask the person to draw just two images where one is spiral and the other is a wave and based on this the output is combined from their respective neural network. This is easy to use and access. 
+
+### Download the trained Model:
+[Go to Google Drive](https://drive.google.com/drive/folders/1a3H-pFoH12YzdiIMJoGQV_pv5yxmeP_t)
