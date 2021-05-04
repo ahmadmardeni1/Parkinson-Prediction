@@ -38,5 +38,8 @@ The following was the accuracy vs epoch graph obtained for spiral, and wave resp
 ## Why do you need to use this application?
 Considering the pandemic situation it is necessary to maintain social distancing and also avoid unnecessary visits to the hospital. The perk of this application is you ask the person to draw just two images where one is spiral and the other is a wave and based on this the output is combined from their respective neural network. This is easy to use and access. 
 
+##Website Clip (After uploading picture, preview available)
+![Site shot](https://user-images.githubusercontent.com/46274158/117030589-6aa83f00-ad1d-11eb-8ed4-61e2aab25efb.png)
+
 ### Download the trained Model:
 [Go to Google Drive](https://drive.google.com/drive/folders/1a3H-pFoH12YzdiIMJoGQV_pv5yxmeP_t)
